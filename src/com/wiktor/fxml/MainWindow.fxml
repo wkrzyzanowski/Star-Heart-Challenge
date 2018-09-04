@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="516.0" prefWidth="332.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.wiktor.controllers.Controller">
+   <children>
+      <ProgressBar fx:id="progressBar" layoutX="6.0" layoutY="5.0" prefHeight="22.0" prefWidth="319.0" progress="0.0" />
+      <Label fx:id="progessLabel" alignment="CENTER" layoutX="145.0" layoutY="5.0" prefHeight="22.0" prefWidth="46.0" text="0 %">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Pane layoutX="14.0" layoutY="33.0" prefHeight="308.0" prefWidth="308.0">
+         <children>
+            <Button fx:id="Field1x1" mnemonicParsing="false" onAction="#play1" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field1x2" layoutX="104.0" mnemonicParsing="false" onAction="#play2" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field1x3" layoutX="208.0" mnemonicParsing="false" onAction="#play3" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field2x1" layoutY="104.0" mnemonicParsing="false" onAction="#play4" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field2x2" layoutX="104.0" layoutY="104.0" mnemonicParsing="false" onAction="#play5" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field2x3" layoutX="208.0" layoutY="104.0" mnemonicParsing="false" onAction="#play6" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field3x1" layoutY="208.0" mnemonicParsing="false" onAction="#play7" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field3x2" layoutX="104.0" layoutY="208.0" mnemonicParsing="false" onAction="#play8" prefHeight="100.0" prefWidth="100.0" />
+            <Button fx:id="Field3x3" layoutX="208.0" layoutY="208.0" mnemonicParsing="false" onAction="#play9" prefHeight="100.0" prefWidth="100.0" />
+         </children>
+      </Pane>
+      <Label fx:id="currentPlayerLabel" layoutX="173.0" layoutY="348.0" prefHeight="27.0" prefWidth="133.0" text="Current player: ">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="currentPlayer" alignment="CENTER" layoutX="166.0" layoutY="382.0" prefHeight="27.0" prefWidth="127.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font></Label>
+      <Button fx:id="restartButton" layoutX="20.0" layoutY="356.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="61.0" prefWidth="127.0" text="Restart!">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Button>
+      <Button fx:id="addNames" layoutX="6.0" layoutY="483.0" mnemonicParsing="false" onAction="#addPlayerNames" prefHeight="25.0" prefWidth="100.0" text="Change names" />
+      <Label layoutX="166.0" layoutY="414.0" prefHeight="27.0" prefWidth="146.0" text="    Points table    " underline="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="starName" alignment="CENTER_RIGHT" layoutX="108.0" layoutY="441.0" prefHeight="27.0" prefWidth="106.0" text="Star:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="heartName" alignment="CENTER_RIGHT" layoutX="108.0" layoutY="468.0" prefHeight="27.0" prefWidth="106.0" text="Heart:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="starPoints" alignment="CENTER_RIGHT" layoutX="216.0" layoutY="441.0" prefHeight="27.0" prefWidth="46.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="heartPoints" alignment="CENTER_RIGHT" layoutX="216.0" layoutY="468.0" prefHeight="27.0" prefWidth="46.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

@@ -1,0 +1,126 @@
+.button:disabled {
+    -fx-opacity: 0.9;
+}
+
+#background {
+    -fx-background-image: url(../images/bck.png);
+
+}
+
+#restartButton {
+    -fx-padding: 8 10 10 10;
+    -fx-background-insets: 0, 0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+    #9d4024,
+    #d86e3a,
+    radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 4, 0, 0, 1);
+    -fx-font-weight: bold;
+    -fx-font-size: 2em;
+    -fx-text-fill: white;
+}
+
+#restartButton:hover {
+    -fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+    #9d4024,
+    #d86e3a,
+    radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+    -fx-text-fill: #2dff00;
+}
+
+#addNames {
+
+    -fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+    #9d4024,
+    #d86e3a,
+    radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+
+#addNames:hover {
+    -fx-background-color: linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+    #9d4024,
+    #d86e3a,
+    radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+    -fx-text-fill: #2dff00;
+}
+
+#currentPlayer {
+    -fx-text-fill: #000075;
+}
+
+#currentPlayerLabel {
+    -fx-text-fill: #000075;
+}
+
+#heartName {
+    -fx-text-fill: #000075;
+}
+
+#starName {
+    -fx-text-fill: #000075;
+}
+
+#starPoints {
+    -fx-text-fill: #000075;
+}
+
+#heartPoints {
+    -fx-text-fill: #000075;
+}
+
+.player1 {
+    -fx-background-image: url(../images/X.png);
+    -fx-border-style: solid;
+    -fx-border-width: 6px;
+    -fx-border-color: black;
+    -fx-background-insets: 2px;
+}
+
+.player2 {
+    -fx-background-image: url(../images/Y.png);
+    -fx-border-style: solid;
+    -fx-border-width: 6px;
+    -fx-border-color: black;
+    -fx-background-insets: 2px;
+}
+
+.player1hover:hover {
+    -fx-background-image: url(../images/X.png);
+
+}
+
+.player2hover:hover {
+    -fx-background-image: url(../images/Y.png);
+}
+
+.Buttons {
+    -fx-background-color: #0c95ff;
+    -fx-border-style: solid;
+    -fx-border-width: 6px;
+    -fx-border-color: black;
+    -fx-background-insets: 2px;
+}
+
+.Buttons:hover {
+    -fx-background-color: #53b8ff;
+    /*-fx-background-image: url(../images/X.png);*/
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.greenBar {
+    -fx-accent: green;
+}
+
+.yellowBar {
+    -fx-accent: yellow;
+}
+
+.redBar {
+    -fx-accent: red;
+}
